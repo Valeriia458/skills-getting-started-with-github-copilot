@@ -120,4 +120,4 @@ def unregister_participant(activity_name: str, email: str):
         raise HTTPException(status_code=404, detail="Participant not found")
 
     activity["participants"].remove(email)
-    return {"message": f"Unregistered {email} from {activity_name}"}
+    return {"message": f"Unregistered {email} from {activity_name}"}    
